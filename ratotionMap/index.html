@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>轮播图</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/user-index.css">
+</head>
+<body>
+	<div id="carousel"></div>
+	<dic id="other"></dic>
+	<script type="text/javascript" src="js/carousel.js"></script>
+	<script type="text/javascript">
+		car carousel = new Carousel({
+			wrap: document.getElementById("carousel");
+			urlArr: ["img/1.jpg","img/2.jpg","img/3.jpg"]
+		});
+		var other = new Carousel({
+			wrap: document.getElementById("carousel");
+			urlArr: ["img/4.jpg","img/5.jpg","img/6.jpg"]
+		});
+	</script>
+</body>
+</html>
